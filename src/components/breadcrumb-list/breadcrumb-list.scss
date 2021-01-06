@@ -1,0 +1,18 @@
+@import '../../styles/colors';
+
+.breadcrumb-list {
+  font-size: 14px;
+  margin: 1rem auto;
+  color: $dark;
+
+  .category:last-child {
+    color: $other-dark;
+  }
+
+  .category + .category {
+    &::before {
+      color: $dark;
+      content: ' > ';
+    }
+  }
+}

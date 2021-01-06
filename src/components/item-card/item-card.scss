@@ -1,0 +1,61 @@
+@import '../../styles/colors';
+
+.item-card {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+
+  @media (min-width: 576px) {
+    flex-direction: row;
+  }
+
+  &:not(:last-child) {
+    border-bottom: solid 1px #f3f3f3;
+  }
+
+  .item-image {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 4px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  > .item-info {
+    margin-left: 1rem;
+    flex: 1;
+
+    > .item-title {
+      text-decoration: none;
+      color: black;
+    }
+
+    > .item-price-shipping {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      .item-price {
+        font-size: 24px;
+        margin-right: 0.5rem;
+      }
+
+      > .item-location {
+        font-size: 12px;
+        color: $dark;
+      }
+
+      > img {
+        margin-left: 0.5rem;
+      }
+    }
+
+    > h1 {
+      font-size: 1rem;
+    }
+  }
+}
