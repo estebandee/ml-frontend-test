@@ -24,14 +24,13 @@ const ItemCard = ({ item }) => {
           </div>
           <span className="item-location">{item.location.state_name}</span>
         </div>
-        <a
-          href="#"
+        <div
           className="item-title"
           data-testid="item-title"
           onClick={() => goToItemDetails(item.id)}
         >
           {item.title}
-        </a>
+        </div>
       </div>
     </div>
   );
