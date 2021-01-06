@@ -29,8 +29,9 @@
     flex: 1;
 
     > .item-title {
-      text-decoration: none;
-      color: black;
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     > .item-price-shipping {
