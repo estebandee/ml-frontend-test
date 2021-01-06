@@ -35,4 +35,4 @@ Se accede desde [http://localhost:3000](http://localhost:3000). El server corre 
 
 ### `npm run test`
 
-Ejecuta los tests.
+Ejecuta los tests (recordar tener el server levantado).
